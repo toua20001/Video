@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## VideoManagementServer
+動画の管理が煩雑になっていた兼railsの勉強がしたかったので作ったWebAPです。  
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## How To Use
+1. 動画を登録する
+  1. 動画を「public/assets/upload」に追加する。
+  2. 「videos/upload」にアクセスする。
+  3. アップロードボタンをクリックする。
+2. 動画を検索する
