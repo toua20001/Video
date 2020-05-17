@@ -5,9 +5,9 @@ p Find me in app/views/videos/upload.html.slim
 
 .container
   .btn-area
-    = link_to 'キャンセル', videos_path, class: 'btn btn-danger', style: 'margin-right: 5px;'
+    = link_to 'キャンセル', videos_path, class: 'btn btn-light', style: 'margin-right: 5px;'
     button.btn.btn-outline-secondary onclick="location.reload();" style="margin-right:5px;" 更新
-    = link_to '登録', "#{videos_upload_path}/import", class: 'btn btn-primary', style: 'margin-right:5px;'
+    = link_to '登録', import_videos_path, class: 'btn btn-primary', style: 'margin-right:5px;'
 
   table.table.table-bordered.table-striped.text-break
     thead.thead-dark

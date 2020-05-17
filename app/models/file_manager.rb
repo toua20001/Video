@@ -86,4 +86,17 @@ class FileManager < ApplicationRecord
     @@messages.push("#{import_files.length}件の動画を登録しました。")
     @@messages.push("#{skip_files.length}件の動画をスキップしました。")
   end
+
+  def self.removeVideo(fname)
+    self.refleshMessage
+
+    # ファイル名の編集
+    bname = File.basename(fname)
+    ifname = "#{Settings.path.public_path}#{fname}"
+    ofname = "#{Settings.path.public_path}#{Settings.path.remove_path}/#{bname}"
+    # 対象のファイルをremoveフォルダに移動する
+    FileUtils.cp(ifname, ofname)
+    # 対象のファイルを削除する
+    FileUtils.rm(ifname)
+  end
 end

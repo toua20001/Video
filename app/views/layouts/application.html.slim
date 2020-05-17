@@ -12,7 +12,8 @@ html
       .navbar-expand-md
         .navbar-brand = link_to 'Video Manegement Server', videos_path
       .justify-content-end
-        = link_to 'UPLOAD', videos_upload_path, class: 'btn btn-dark'
+        = link_to 'タグ一覧', tags_videos_path, class: 'btn btn-outline-success'
+        = link_to 'UPLOAD', upload_videos_path, class: 'btn btn-dark'
     .container
       - if flash.notice.present?
         .alert.alert-success = flash.notice

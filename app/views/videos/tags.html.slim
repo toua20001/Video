@@ -1,0 +1,13 @@
+.container(style="margin-top: 20px;")
+  .row
+    table.table.table-striped
+      thead
+        tr
+          th colspan="4" 登録されているタグ一覧
+      tbody
+        - @tags.each_with_index do |(k, v), i|
+          - if i%4 == 0
+            tr
+          td
+            = link_to k, "search?search_word=#{k}&search_type=tag"
+            = " (#{v})"

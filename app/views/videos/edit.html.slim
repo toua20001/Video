@@ -8,16 +8,15 @@ p Find me in app/views/videos/edit.html.slim
   .row
     .col.text-center(style="margin-bottom: 30px;")
       = video_tag @video.path, :autoplay => false, :loop => true, :size => 18*32, :controls => true, :type => 'video/mp4'
-  = form_with url: edit_video_path do |f|
 
+  = form_with url: edit_video_path do |f|
     .row
       .col.text-left
-        = link_to 'キャンセル', video_path, class: 'btn btn-light', style: 'margin-right: 5px;'
+        = link_to 'キャンセル', video_path, class: 'btn btn-light'
       .col.text-right
-        = link_to '削除', videos_path, class: 'btn btn-danger text-right', style: 'margin-right: 5px;'
-        button.btn.btn-success onclick="addTagField()" value="test" type="button" style="margin-right:5px;" 新規タグの追加
-        = f.submit nil, class: 'btn btn-primary', style: 'margin-right:5px;'
-    p
+        = link_to '削除', video_path, class: 'btn btn-danger text-right', data: {confirm: "本当に削除してよろしいですか？"}, method: :delete
+        button.btn.btn-success onclick="addTagField()" value="test" type="button" 新規タグの追加
+        = f.submit nil, class: 'btn btn-primary'
 
     .input-group.mb-3
       .input-group-prepend

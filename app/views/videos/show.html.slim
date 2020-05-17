@@ -23,7 +23,7 @@ p =@params
       td = @video.path
     tr
       th = Vs002.human_attribute_name(:description)
-      td = @video.description
+      td = simple_format(@video.description)
     tr
       th = Vs001.human_attribute_name(:created_at)
       td = @video.created_at
