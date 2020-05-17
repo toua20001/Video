@@ -1,0 +1,36 @@
+sass:
+  #search-area { background-color: #ccc; }
+  table { margin-top: 20px; }
+  .radio-label { margin-right: 20px; }
+  .video-tile { border: solid 1px #999; border-radius: 5px; padding: 3px;}
+
+h1 Videos#index
+p Find me in app/views/videos/index.html.slim
+
+p = @p
+p = flash[:search_type]
+
+.container
+  = form_with(url: "videos/search") do |f|
+    #search-area(style="padding:10px;width:100%;")
+      .form-group.form-inline
+        = f.text_field :search_word, class: "form-control col-10", style: "width:80%;", id: "search_word", value: flash[:search_word]
+        button.btn.btn-primary.form-inline.col style="margin-left: 10px;" 検索
+      .form-group
+        = f.radio_button :search_type, :title, :checked => (flash[:search_type] == "title" or flash[:search_type].blank?)
+        = f.label :search_type_title, "タイトルで検索", class: "radio-label"
+        = f.radio_button :search_type, :tag, :checked => (flash[:search_type] == "tag")
+        = f.label :search_type_tag, "タグで検索", class: "radio-label"
+        = f.radio_button :search_type, :both, :checked => (flash[:search_type] == "both"), disabled: true
+        = f.label :search_type_both, "両方で検索", class: "radio-label", disabled: true
+      .search-result
+        = "#{@videos.length}件の動画がヒットしました。"
+
+  .row
+    - @videos.each do |video|
+      .col-3(style="margin-top: 30px;")
+        = link_to video_path(video) do
+          .video-tile
+            = image_tag video.img_path, class: "img-fluid"
+            p.text-center.text-truncate = video.path
+

@@ -1,0 +1,46 @@
+sass:
+  .form-control {margin-bottom: 3px;}
+
+h1 Videos#edit
+p Find me in app/views/videos/edit.html.slim
+
+.container
+  .row
+    .col.text-center(style="margin-bottom: 30px;")
+      = video_tag @video.path, :autoplay => false, :loop => true, :size => 18*32, :controls => true, :type => 'video/mp4'
+  = form_with url: edit_video_path do |f|
+
+    .row
+      .col.text-left
+        = link_to 'キャンセル', video_path, class: 'btn btn-light', style: 'margin-right: 5px;'
+      .col.text-right
+        = link_to '削除', videos_path, class: 'btn btn-danger text-right', style: 'margin-right: 5px;'
+        button.btn.btn-success onclick="addTagField()" value="test" type="button" style="margin-right:5px;" 新規タグの追加
+        = f.submit nil, class: 'btn btn-primary', style: 'margin-right:5px;'
+    p
+
+    .input-group.mb-3
+      .input-group-prepend
+        span.input-group-text = :title
+      = f.text_field :title, value: @video.title, class: 'form-control', id: 'title'
+    .input-group.mb-3
+      .input-group-prepend
+        span.input-group-text = :desctiption
+      = f.text_area :description, rows: 5, value: @video.description, class: 'form-control', id:'description'
+    .form-group
+      = f.label :tag
+      #tag-field
+        - @tags.each_with_index do |t|
+          = f.text_field :tag, value: "#{t.tag}", class: 'form-control', name: 'tag[]'
+
+
+
+javascript:
+  function addTagField() {
+    const tf = document.getElementById("tag-field");
+    const new_tf = document.createElement("input");
+    new_tf.className = "form-control";
+    new_tf.name = "tag[]";
+    new_tf.placeholder = "new tag";
+    tf.appendChild(new_tf);
+  }

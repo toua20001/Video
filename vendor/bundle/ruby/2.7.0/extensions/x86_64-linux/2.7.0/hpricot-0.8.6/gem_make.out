@@ -1,0 +1,261 @@
+current directory: /mnt/e/work/Rails/VideoManegementServer/vendor/bundle/ruby/2.7.0/gems/hpricot-0.8.6/ext/hpricot_scan
+/home/tnishi/.rbenv/versions/2.7.1/bin/ruby -I /home/tnishi/.rbenv/versions/2.7.1/lib/ruby/site_ruby/2.7.0 -r ./siteconf20200515-10180-1mfjxbg.rb extconf.rb
+checking for main() in -lc... yes
+creating Makefile
+
+current directory: /mnt/e/work/Rails/VideoManegementServer/vendor/bundle/ruby/2.7.0/gems/hpricot-0.8.6/ext/hpricot_scan
+make "DESTDIR=" clean
+
+current directory: /mnt/e/work/Rails/VideoManegementServer/vendor/bundle/ruby/2.7.0/gems/hpricot-0.8.6/ext/hpricot_scan
+make "DESTDIR="
+compiling hpricot_css.c
+hpricot_css.rl: In function ‘hpricot_css’:
+hpricot_css.rl:15:17: warning: field precision specifier ‘.*’ expects argument of type ‘int’, but argument 3 has type ‘long int’ [-Wformat=]
+   sprintf(filt, "%.*s", te - ts, ts); \
+                 ^       ~~~~~~
+hpricot_css.rl:87:14: note: in expansion of macro ‘FILTERAUTO’
+     traverse   => { FILTERAUTO(); };
+              ^~~~~~~~~~
+hpricot_css.c:3407:9: warning: comparison between pointer and integer
+  if ( p == eof )
+         ^~
+At top level:
+hpricot_css.c:34:18: warning: ‘hpricot_css_en_main’ defined but not used [-Wunused-const-variable=]
+ static const int hpricot_css_en_main = 87;
+                  ^~~~~~~~~~~~~~~~~~~
+hpricot_css.c:32:18: warning: ‘hpricot_css_error’ defined but not used [-Wunused-const-variable=]
+ static const int hpricot_css_error = 0;
+                  ^~~~~~~~~~~~~~~~~
+hpricot_css.rl: In function ‘hpricot_css’:
+hpricot_css.c:3407:9: warning: ‘eof’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  if ( p == eof )
+       ~~^~~~~~
+hpricot_css.rl:96:16: note: ‘eof’ was declared here
+   int cs, act, eof;
+                ^~~
+hpricot_css.rl: At top level:
+cc1: warning: unrecognized command line option ‘-Wno-self-assign’
+cc1: warning: unrecognized command line option ‘-Wno-parentheses-equality’
+cc1: warning: unrecognized command line option ‘-Wno-constant-logical-operand’
+cc1: warning: unrecognized command line option ‘-Wno-cast-function-type’
+compiling hpricot_scan.c
+hpricot_common.rl: In function ‘hpricot_scan’:
+hpricot_scan.rl:105:16: warning: ordered comparison of pointer with integer zero [-Wextra]
+         if (ts > 0) { \
+                ^
+hpricot_common.rl:73:20: note: in expansion of macro ‘TEXT_PASS’
+     any | newline { TEXT_PASS(); };
+                    ^~~~~~~~~
+hpricot_scan.rl:105:16: warning: ordered comparison of pointer with integer zero [-Wextra]
+         if (ts > 0) { \
+                ^
+NONE:12:19: note: in expansion of macro ‘TEXT_PASS’
+hpricot_scan.rl:105:16: warning: ordered comparison of pointer with integer zero [-Wextra]
+         if (ts > 0) { \
+                ^
+hpricot_common.rl:73:14: note: in expansion of macro ‘TEXT_PASS’
+     any | newline { TEXT_PASS(); };
+              ^~~~~~~~~
+hpricot_scan.rl:105:16: warning: ordered comparison of pointer with integer zero [-Wextra]
+         if (ts > 0) { \
+                ^
+hpricot_common.rl:73:14: note: in expansion of macro ‘TEXT_PASS’
+     any | newline { TEXT_PASS(); };
+              ^~~~~~~~~
+hpricot_scan.rl:105:16: warning: ordered comparison of pointer with integer zero [-Wextra]
+         if (ts > 0) { \
+                ^
+hpricot_common.rl:73:16: note: in expansion of macro ‘TEXT_PASS’
+     any | newline { TEXT_PASS(); };
+                ^~~~~~~~~
+hpricot_scan.rl:105:16: warning: ordered comparison of pointer with integer zero [-Wextra]
+         if (ts > 0) { \
+                ^
+hpricot_common.rl:46:4: note: in expansion of macro ‘TEXT_PASS’
+   StartXmlProcIns = "<?" Name >{ TEXT_PASS(); } space+ ;
+    ^~~~~~~~~
+hpricot_scan.rl:105:16: warning: ordered comparison of pointer with integer zero [-Wextra]
+         if (ts > 0) { \
+                ^
+hpricot_common.rl:46:4: note: in expansion of macro ‘TEXT_PASS’
+   StartXmlProcIns = "<?" Name >{ TEXT_PASS(); } space+ ;
+    ^~~~~~~~~
+hpricot_scan.rl:105:16: warning: ordered comparison of pointer with integer zero [-Wextra]
+         if (ts > 0) { \
+                ^
+hpricot_common.rl:51:20: note: in expansion of macro ‘TEXT_PASS’
+     any | newline { TEXT_PASS(); };
+                    ^~~~~~~~~
+hpricot_scan.rl:105:16: warning: ordered comparison of pointer with integer zero [-Wextra]
+         if (ts > 0) { \
+                ^
+hpricot_common.rl:51:14: note: in expansion of macro ‘TEXT_PASS’
+     any | newline { TEXT_PASS(); };
+              ^~~~~~~~~
+hpricot_scan.rl:105:16: warning: ordered comparison of pointer with integer zero [-Wextra]
+         if (ts > 0) { \
+                ^
+hpricot_common.rl:51:14: note: in expansion of macro ‘TEXT_PASS’
+     any | newline { TEXT_PASS(); };
+              ^~~~~~~~~
+hpricot_scan.rl:105:16: warning: ordered comparison of pointer with integer zero [-Wextra]
+         if (ts > 0) { \
+                ^
+hpricot_common.rl:51:16: note: in expansion of macro ‘TEXT_PASS’
+     any | newline { TEXT_PASS(); };
+                ^~~~~~~~~
+hpricot_scan.rl:105:16: warning: ordered comparison of pointer with integer zero [-Wextra]
+         if (ts > 0) { \
+                ^
+hpricot_common.rl:56:20: note: in expansion of macro ‘TEXT_PASS’
+     any | newline { TEXT_PASS(); };
+                    ^~~~~~~~~
+hpricot_scan.rl:105:16: warning: ordered comparison of pointer with integer zero [-Wextra]
+         if (ts > 0) { \
+                ^
+hpricot_common.rl:56:14: note: in expansion of macro ‘TEXT_PASS’
+     any | newline { TEXT_PASS(); };
+              ^~~~~~~~~
+hpricot_scan.rl:105:16: warning: ordered comparison of pointer with integer zero [-Wextra]
+         if (ts > 0) { \
+                ^
+hpricot_common.rl:56:14: note: in expansion of macro ‘TEXT_PASS’
+     any | newline { TEXT_PASS(); };
+              ^~~~~~~~~
+hpricot_scan.rl:105:16: warning: ordered comparison of pointer with integer zero [-Wextra]
+         if (ts > 0) { \
+                ^
+hpricot_common.rl:56:16: note: in expansion of macro ‘TEXT_PASS’
+     any | newline { TEXT_PASS(); };
+                ^~~~~~~~~
+hpricot_scan.rl:105:16: warning: ordered comparison of pointer with integer zero [-Wextra]
+         if (ts > 0) { \
+                ^
+hpricot_common.rl:61:14: note: in expansion of macro ‘TEXT_PASS’
+     any | newline { TEXT_PASS(); };
+              ^~~~~~~~~
+hpricot_scan.rl:105:16: warning: ordered comparison of pointer with integer zero [-Wextra]
+         if (ts > 0) { \
+                ^
+hpricot_common.rl:61:14: note: in expansion of macro ‘TEXT_PASS’
+     any | newline { TEXT_PASS(); };
+              ^~~~~~~~~
+hpricot_scan.rl:105:16: warning: ordered comparison of pointer with integer zero [-Wextra]
+         if (ts > 0) { \
+                ^
+hpricot_common.rl:61:16: note: in expansion of macro ‘TEXT_PASS’
+     any | newline { TEXT_PASS(); };
+                ^~~~~~~~~
+hpricot_scan.rl:619:14: warning: ordered comparison of pointer with integer zero [-Wextra]
+       if (ts > 0) {
+              ^
+In file included from /home/tnishi/.rbenv/versions/2.7.1/include/ruby-2.7.0/ruby/ruby.h:2148:0,
+                 from /home/tnishi/.rbenv/versions/2.7.1/include/ruby-2.7.0/ruby.h:33,
+                 from hpricot_scan.rl:9:
+hpricot_scan.rl: In function ‘Init_hpricot_scan’:
+/home/tnishi/.rbenv/versions/2.7.1/include/ruby-2.7.0/ruby/intern.h:1218:137: warning: passing argument 3 of ‘rb_define_singleton_method3’ from incompatible pointer type [-Wincompatible-pointer-types]
+ #define rb_define_singleton_method(klass, mid, func, arity) rb_define_singleton_method_choose_prototypem3((arity),(func))((klass),(mid),(func),(arity));
+                                                                                                                                         ^
+hpricot_scan.rl:855:3: note: in expansion of macro ‘rb_define_singleton_method’
+   rb_define_singleton_method(mHpricot, "css", hpricot_css, 3);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/tnishi/.rbenv/versions/2.7.1/include/ruby-2.7.0/ruby/intern.h:1195:27: note: expected ‘VALUE (*)(VALUE,  VALUE,  VALUE,  VALUE) {aka long unsigned int (*)(long unsigned int,  long unsigned int,  long unsigned int,  long unsigned int)}’ but argument is of type ‘VALUE (*)(VALUE,  VALUE,  VALUE,  VALUE,  VALUE) {aka long unsigned int (*)(long unsigned int,  long unsigned int,  long unsigned int,  long unsigned int,  long unsigned int)}’
+ RB_METHOD_DEFINITION_DECL(rb_define_singleton_method, (2,3), (VALUE klass, const char *name), (klass, name))
+                           ^
+/home/tnishi/.rbenv/versions/2.7.1/include/ruby-2.7.0/ruby/intern.h:1042:82: note: in definition of macro ‘RB_METHOD_DEFINITION_DECL_C’
+     __attribute__((__unused__,__weakref__(#def),__nonnull__ nonnull))static void defname(RB_UNWRAP_MACRO decl,VALUE(*func)funcargs,int arity);
+                                                                                  ^~~~~~~
+/home/tnishi/.rbenv/versions/2.7.1/include/ruby-2.7.0/ruby/intern.h:1077:1: note: in expansion of macro ‘RB_METHOD_DEFINITION_DECL_1’
+ RB_METHOD_DEFINITION_DECL_1(def,nonnull,def##3 ,3 ,decl,vars,(VALUE,VALUE,VALUE,VALUE)) \
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/tnishi/.rbenv/versions/2.7.1/include/ruby-2.7.0/ruby/intern.h:1195:1: note: in expansion of macro ‘RB_METHOD_DEFINITION_DECL’
+ RB_METHOD_DEFINITION_DECL(rb_define_singleton_method, (2,3), (VALUE klass, const char *name), (klass, name))
+ ^~~~~~~~~~~~~~~~~~~~~~~~~
+At top level:
+hpricot_scan.rl:241:16: warning: ‘hpricot_ele_get_children’ defined but not used [-Wunused-function]
+   static VALUE hpricot_ele_get_##prop(VALUE self) { \
+                ^
+hpricot_scan.rl:259:1: note: in expansion of macro ‘H_PROP’
+ H_PROP(children, H_ELE_CHILDREN);
+ ^~~~~~
+hpricot_scan.rl:237:16: warning: ‘hpricot_ele_clear_children’ defined but not used [-Wunused-function]
+   static VALUE hpricot_ele_clear_##prop(VALUE self) { \
+                ^
+hpricot_scan.rl:259:1: note: in expansion of macro ‘H_PROP’
+ H_PROP(children, H_ELE_CHILDREN);
+ ^~~~~~
+hpricot_scan.rl:233:16: warning: ‘hpricot_ele_set_children’ defined but not used [-Wunused-function]
+   static VALUE hpricot_ele_set_##prop(VALUE self, VALUE x) { \
+                ^
+hpricot_scan.rl:259:1: note: in expansion of macro ‘H_PROP’
+ H_PROP(children, H_ELE_CHILDREN);
+ ^~~~~~
+hpricot_scan.rl:241:16: warning: ‘hpricot_ele_get_etag’ defined but not used [-Wunused-function]
+   static VALUE hpricot_ele_get_##prop(VALUE self) { \
+                ^
+hpricot_scan.rl:258:1: note: in expansion of macro ‘H_PROP’
+ H_PROP(etag, H_ELE_ETAG);
+ ^~~~~~
+hpricot_scan.rl:237:16: warning: ‘hpricot_ele_clear_etag’ defined but not used [-Wunused-function]
+   static VALUE hpricot_ele_clear_##prop(VALUE self) { \
+                ^
+hpricot_scan.rl:258:1: note: in expansion of macro ‘H_PROP’
+ H_PROP(etag, H_ELE_ETAG);
+ ^~~~~~
+hpricot_scan.rl:233:16: warning: ‘hpricot_ele_set_etag’ defined but not used [-Wunused-function]
+   static VALUE hpricot_ele_set_##prop(VALUE self, VALUE x) { \
+                ^
+hpricot_scan.rl:258:1: note: in expansion of macro ‘H_PROP’
+ H_PROP(etag, H_ELE_ETAG);
+ ^~~~~~
+hpricot_scan.rl:241:16: warning: ‘hpricot_ele_get_parent’ defined but not used [-Wunused-function]
+   static VALUE hpricot_ele_get_##prop(VALUE self) { \
+                ^
+hpricot_scan.rl:256:1: note: in expansion of macro ‘H_PROP’
+ H_PROP(parent, H_ELE_PARENT);
+ ^~~~~~
+hpricot_scan.rl:237:16: warning: ‘hpricot_ele_clear_parent’ defined but not used [-Wunused-function]
+   static VALUE hpricot_ele_clear_##prop(VALUE self) { \
+                ^
+hpricot_scan.rl:256:1: note: in expansion of macro ‘H_PROP’
+ H_PROP(parent, H_ELE_PARENT);
+ ^~~~~~
+hpricot_scan.rl:233:16: warning: ‘hpricot_ele_set_parent’ defined but not used [-Wunused-function]
+   static VALUE hpricot_ele_set_##prop(VALUE self, VALUE x) { \
+                ^
+hpricot_scan.rl:256:1: note: in expansion of macro ‘H_PROP’
+ H_PROP(parent, H_ELE_PARENT);
+ ^~~~~~
+hpricot_scan.rl:241:16: warning: ‘hpricot_ele_get_raw’ defined but not used [-Wunused-function]
+   static VALUE hpricot_ele_get_##prop(VALUE self) { \
+                ^
+hpricot_scan.rl:255:1: note: in expansion of macro ‘H_PROP’
+ H_PROP(raw, H_ELE_RAW);
+ ^~~~~~
+hpricot_scan.rl:233:16: warning: ‘hpricot_ele_set_raw’ defined but not used [-Wunused-function]
+   static VALUE hpricot_ele_set_##prop(VALUE self, VALUE x) { \
+                ^
+hpricot_scan.rl:255:1: note: in expansion of macro ‘H_PROP’
+ H_PROP(raw, H_ELE_RAW);
+ ^~~~~~
+hpricot_scan.c:132:18: warning: ‘hpricot_scan_en_main’ defined but not used [-Wunused-const-variable=]
+ static const int hpricot_scan_en_main = 198;
+                  ^~~~~~~~~~~~~~~~~~~~
+hpricot_scan.c:131:18: warning: ‘hpricot_scan_en_html_procins’ defined but not used [-Wunused-const-variable=]
+ static const int hpricot_scan_en_html_procins = 212;
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hpricot_scan.c:130:18: warning: ‘hpricot_scan_en_html_cdata’ defined but not used [-Wunused-const-variable=]
+ static const int hpricot_scan_en_html_cdata = 210;
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+hpricot_scan.c:129:18: warning: ‘hpricot_scan_en_html_comment’ defined but not used [-Wunused-const-variable=]
+ static const int hpricot_scan_en_html_comment = 208;
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: warning: unrecognized command line option ‘-Wno-self-assign’
+cc1: warning: unrecognized command line option ‘-Wno-parentheses-equality’
+cc1: warning: unrecognized command line option ‘-Wno-constant-logical-operand’
+cc1: warning: unrecognized command line option ‘-Wno-cast-function-type’
+linking shared-object hpricot_scan.so
+
+current directory: /mnt/e/work/Rails/VideoManegementServer/vendor/bundle/ruby/2.7.0/gems/hpricot-0.8.6/ext/hpricot_scan
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 hpricot_scan.so ./.gem.20200515-10180-lx3d19

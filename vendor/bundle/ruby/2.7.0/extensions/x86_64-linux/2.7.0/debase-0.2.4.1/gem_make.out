@@ -1,0 +1,28 @@
+current directory: /mnt/e/work/Rails/VideoManegementServer/vendor/bundle/ruby/2.7.0/gems/debase-0.2.4.1/ext/attach
+/home/tnishi/.rbenv/versions/2.7.1/bin/ruby -I /home/tnishi/.rbenv/versions/2.7.1/lib/ruby/site_ruby/2.7.0 -r ./siteconf20200515-10180-j7c5gq.rb extconf.rb
+checking for vm_core.h... no
+checking for vm_core.h... no
+**************************************************************************
+No source for ruby-2.7.1-p83 (revision a0c7c23c9cec0d0ffcba012279cd652d28ad5bf3) provided with
+debase-ruby_core_source gem. Falling back to ruby-2.7.0-preview3.
+**************************************************************************
+checking for vm_core.h... yes
+checking for iseq.h... yes
+checking for version.h... yes
+checking for vm_core.h... yes
+checking for vm_insnhelper.h... yes
+checking for vm_core.h... yes
+checking for method.h... yes
+creating Makefile
+
+current directory: /mnt/e/work/Rails/VideoManegementServer/vendor/bundle/ruby/2.7.0/gems/debase-0.2.4.1/ext/attach
+make "DESTDIR=" clean
+
+current directory: /mnt/e/work/Rails/VideoManegementServer/vendor/bundle/ruby/2.7.0/gems/debase-0.2.4.1/ext/attach
+make "DESTDIR="
+compiling attach.c
+linking shared-object attach.so
+
+current directory: /mnt/e/work/Rails/VideoManegementServer/vendor/bundle/ruby/2.7.0/gems/debase-0.2.4.1/ext/attach
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 attach.so ./.gem.20200515-10180-i09irl

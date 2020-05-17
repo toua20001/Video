@@ -1,0 +1,39 @@
+h1 Videos#show
+p Find me in app/views/videos/show.html.slim
+p =@params
+
+.container
+  .nav.justify-content-end
+    = link_to "next", "/videos/#{@video.id+1}/edit", class: "btn btn-danger", style: "margin-rignt:20px;"
+    = link_to 'Edit', edit_video_path, class: 'btn btn-warning', style: 'margin-right: 10px;'
+  
+
+.container
+  .text-center
+    = video_tag @video.path, :autoplay => false, :loop => true, :size => 18*32, :controls => true, :type => 'video/mp4'
+  table.table.table-hover
+    tr
+      th = Vs001.human_attribute_name(:id)
+      td = @video.id
+    tr
+      th = Vs002.human_attribute_name(:title)
+      td = @video.title
+    tr
+      th = Vs002.human_attribute_name(:path)
+      td = @video.path
+    tr
+      th = Vs002.human_attribute_name(:description)
+      td = @video.description
+    tr
+      th = Vs001.human_attribute_name(:created_at)
+      td = @video.created_at
+    tr
+      th = Vs001.human_attribute_name(:updated_at)
+      td = @video.updated_at
+    tr
+      th タグ
+      td
+        - @tags.each do |tag|
+          = link_to tag.tag, "search?search_word=#{tag.tag}&search_type=tag", style: "margin-right: 10px;"
+
+

@@ -1,0 +1,12 @@
+sql:
+  vs001s:
+    select_video_info: 'vs001s.*, favorite, title, description, path, img_path'
+    select_video_tags: 'vs001s.*, tag'
+    select_video_all_info: 'vs001s.*, favorite, title, description, path, img_path, tag'
+path:
+  root: '/mnt/e/work/Rails/VideoManegementServer'
+  public_path: '/mnt/e/work/Rails/VideoManegementServer/public'
+  video_path: '/assets/videos'
+  image_path: '/assets/images'
+  upload_path: '/assets/upload'
+  remove_path: '/assets/remove'

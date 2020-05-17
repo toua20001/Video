@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title
+      | VMS
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  body
+    .app-title.navbar.navbar-light.bg-light
+      .navbar-expand-md
+        .navbar-brand = link_to 'Video Manegement Server', videos_path
+      .justify-content-end
+        = link_to 'UPLOAD', videos_upload_path, class: 'btn btn-dark'
+    .container
+      - if flash.notice.present?
+        .alert.alert-success = flash.notice
+      - if flash.alert.present?
+        .alert.alert-danger = flash.alert
+    = yield

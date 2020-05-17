@@ -1,0 +1,5 @@
+current directory: /mnt/e/work/Rails/VideoManegementServer/vendor/bundle/ruby/2.7.0/gems/ruby-debug-ide-0.7.2/ext
+/home/tnishi/.rbenv/versions/2.7.1/bin/ruby mkrf_conf.rb
+
+current directory: /mnt/e/work/Rails/VideoManegementServer/vendor/bundle/ruby/2.7.0/gems/ruby-debug-ide-0.7.2/ext
+/home/tnishi/.rbenv/versions/2.7.1/bin/ruby -I/home/tnishi/.rbenv/versions/2.7.1/lib/ruby/site_ruby/2.7.0/rubygems -rrubygems /mnt/e/work/Rails/VideoManegementServer/vendor/bundle/ruby/2.7.0/gems/rake-13.0.1/exe/rake RUBYARCHDIR\=/mnt/e/work/Rails/VideoManegementServer/vendor/bundle/ruby/2.7.0/extensions/x86_64-linux/2.7.0/ruby-debug-ide-0.7.2 RUBYLIBDIR\=/mnt/e/work/Rails/VideoManegementServer/vendor/bundle/ruby/2.7.0/extensions/x86_64-linux/2.7.0/ruby-debug-ide-0.7.2
