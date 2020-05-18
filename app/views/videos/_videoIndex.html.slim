@@ -1,0 +1,45 @@
+sass:
+  #search-area { background-color: #ccc; }
+  table { margin-top: 20px; }
+  .radio-label { margin-right: 20px; }
+  .video-tile { border: solid 1px #999; border-radius: 5px; padding: 3px;}
+
+
+.container
+  h1 動画一覧
+  .row
+    = form_with url: search_videos_path, class: "col-12", local: true do |f|
+      .form-group.w100
+        .row
+          .col-10
+            = f.text_field :search_word,value: session[:search_word], class: "form-control w100"
+          .col-2
+            = f.submit "検索する", class: "btn btn-primary w100"
+        .row
+          .col-2
+            = f.radio_button :search_type, :title, :checked => session[:search_type] == "title" || session[:search_type] == nil
+            = f.label :search_type, "タイトルで検索", value: :title
+          .col-2
+            = f.radio_button :search_type, :tag, value: :tag, :checked => session[:search_type] == "tag"
+            = f.label :search_type, "タグで検索", value: :tag
+
+
+    .col-12
+      p = "#{@count}件の動画が見つかりました。"
+
+  .row
+    .col-12.text-center
+      = will_paginate videos
+
+  .row
+    - videos.each do |video|
+      .col-3(style="margin-top: 30px;")
+        = link_to video_path(video) do
+          .video-tile
+            = image_tag video.img_path, class: "img-fluid"
+            p.text-center.text-truncate = video.path
+    
+  .row
+    .col-12.text-center
+      = will_paginate videos
+

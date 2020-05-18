@@ -1,16 +1,21 @@
 class VideosController < ApplicationController
   def index
-    @p = "#{flash[:search_word]} , #{flash[:search_type]}"
-    @search_type = flash[:search_type]
-    @videos, @count = Vs001.searchAllVideos(params[:sort], params[:order], flash[:search_word], flash[:search_type], params[:page])
+    session.clear
+    @videos, @count = Vs001.searchAllVideos(params.permit(:sort, :order, :search_word, :search_type, :page).to_h)
   end
 
   def search
+    @parameters = Hash.new
     # セッションに検索条件を設定
-    flash[:search_word] = params[:search_word]
-    flash[:search_type] = params[:search_type]
+    unless params[:commit].nil? then
+      session[:search_word] = params[:search_word]
+      session[:search_type] = params[:search_type]
+    end
 
-    redirect_to action: :index
+
+    @p = "#{session[:search_word]} , #{session[:search_type]} search!!"
+    @videos, @count = Vs001.searchAllVideos(params.permit(:sort, :order, :search_word, :search_type, :page).to_h)
+
   end
 
   def edit
